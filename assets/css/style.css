@@ -1,462 +1,638 @@
-
 /* =====================================
    FINEXA.exchange
-   Modern FinTech Dark Theme
+   Premium Dark FinTech Design
 ===================================== */
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", "Segoe UI", Arial, sans-serif;
 }
+
 
 body {
+
+    font-family: 'Inter', sans-serif;
+
     background:
-        radial-gradient(circle at top, rgba(0, 212, 255, 0.15), transparent 35%),
-        #05070d;
+    radial-gradient(circle at top, #102030 0%, #05070a 45%, #000000 100%);
+
     color: #ffffff;
+
     min-height: 100vh;
+
 }
 
 
-/* ===============================
-   Header
-================================ */
+
+
+/* HEADER */
+
 
 header {
+
     width: 100%;
-    padding: 25px 8%;
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
+
+    padding: 30px 8%;
+
 }
+
+
 
 .logo {
-    font-size: 28px;
+
+    font-size: 30px;
+
     font-weight: 800;
+
     letter-spacing: -1px;
+
 }
 
+
 .logo span {
-    color: #00d4ff;
+
+    color: #00e5ff;
+
 }
+
+
+
+
+
+nav {
+
+    display: flex;
+
+    gap: 35px;
+
+}
+
 
 
 nav a {
-    color: #a7b0c0;
+
+    color: #b7c1cc;
+
     text-decoration: none;
-    margin-left: 30px;
-    transition: 0.3s;
+
+    font-size: 15px;
+
+    transition: .3s;
+
 }
+
+
 
 nav a:hover {
-    color: #00d4ff;
+
+    color: #00e5ff;
+
 }
 
 
-/* ===============================
-   Hero Section
-================================ */
+
+
+
+/* HERO */
+
 
 .hero {
+
     width: 100%;
-    padding: 70px 20px;
+
     text-align: center;
+
+    padding: 70px 20px;
+
 }
+
 
 
 .hero h1 {
-    font-size: clamp(38px, 5vw, 64px);
+
+    font-size: clamp(42px, 6vw, 76px);
+
     font-weight: 800;
-    letter-spacing: -2px;
-    margin-bottom: 20px;
+
+    line-height: 1.05;
+
+    letter-spacing: -3px;
+
 }
+
 
 
 .hero h1 span {
-    color: #00d4ff;
+
+    color: #00e5ff;
+
 }
+
+
 
 
 .hero p {
-    color: #9ca8ba;
-    font-size: 18px;
-    max-width: 600px;
-    margin: auto;
+
+    margin-top: 25px;
+
+    color: #aab4c0;
+
+    font-size: 19px;
+
+    line-height: 1.6;
+
 }
 
 
-/* ===============================
-   Exchange Box
-================================ */
+
+
+
+
+
+/* EXCHANGE BOX */
+
 
 .exchange-box {
 
-    margin: 60px auto;
-    max-width: 520px;
 
-    background:
-    rgba(255,255,255,0.05);
+    margin: 55px auto 0;
 
-    backdrop-filter: blur(20px);
+    max-width: 850px;
 
-    border: 1px solid rgba(255,255,255,0.1);
-
-    border-radius: 28px;
 
     padding: 35px;
 
+
+    background:
+
+    rgba(255,255,255,0.05);
+
+
+    border:
+
+    1px solid rgba(255,255,255,0.12);
+
+
+    backdrop-filter: blur(20px);
+
+
+    border-radius: 25px;
+
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+
     box-shadow:
-    0 25px 70px rgba(0,0,0,0.5);
+
+    0 25px 80px rgba(0,0,0,.5);
 
 }
 
 
-/* FROM / TO Cards */
+
+
+
+
+
+/* CARDS */
+
 
 .exchange-card {
 
-    background:
-    rgba(255,255,255,0.06);
 
-    border-radius: 20px;
+    background:
+
+    rgba(0,0,0,0.35);
+
+
+    border:
+
+    1px solid rgba(255,255,255,0.08);
+
 
     padding: 25px;
 
+
+    border-radius: 18px;
+
+
     text-align: left;
 
-    margin-bottom: 20px;
+}
 
-    border: 1px solid rgba(255,255,255,0.08);
+
+
+label {
+
+    display: block;
+
+    color: #9ca8b5;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+
+    letter-spacing: 1px;
 
 }
 
 
-.exchange-card label {
-
-    color:#8d99aa;
-    font-size:14px;
-    display:block;
-    margin-bottom:12px;
-
-}
 
 
-.exchange-card input,
-.exchange-card select {
+select,
+input {
 
-    width:100%;
 
-    background:#0b1220;
+    width: 100%;
+
+
+    background:
+
+    #111820;
+
 
     color:white;
 
-    border:none;
 
-    padding:15px;
+    border:
 
-    border-radius:14px;
+    1px solid rgba(255,255,255,.15);
 
-    font-size:17px;
+
+    padding:16px;
+
+
+    border-radius:12px;
+
+
+    font-size:16px;
+
 
     outline:none;
 
+
+    margin-bottom:20px;
+
+
 }
 
 
-.exchange-card select option {
 
-    background:#0b1220;
+select:focus,
+input:focus {
+
+
+    border-color:#00e5ff;
 
 }
 
 
-/* Swap Button */
+
+
+
+
 
 .swap-button {
+
 
     width:55px;
 
     height:55px;
 
-    margin:-10px auto 10px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
 
     border-radius:50%;
 
-    background:#00d4ff;
 
-    color:#001018;
+    margin:auto;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
 
     font-size:25px;
 
+
+    background:#00e5ff;
+
+
+    color:#001015;
+
+
     font-weight:bold;
+
 
 }
 
 
-/* Location */
+
+
+
+
+
+/* LOCATION */
+
 
 .location {
 
-    margin-top:20px;
 
-}
+    background:
 
-
-.location select {
-
-    width:100%;
-
-    padding:16px;
-
-    border-radius:15px;
-
-    background:#0b1220;
-
-    border:1px solid rgba(255,255,255,.1);
-
-    color:white;
-
-}
+    rgba(255,255,255,.04);
 
 
-/* Main Button */
+    padding:25px;
 
-.main-button {
-
-    margin-top:30px;
-
-    width:100%;
-
-    padding:18px;
 
     border-radius:18px;
 
+
+    text-align:left;
+
+
+}
+
+
+
+
+
+
+
+
+/* BUTTON */
+
+
+.main-button {
+
+
+    margin-top:10px;
+
+
+    width:100%;
+
+
+    padding:20px;
+
+
     border:none;
 
-    cursor:pointer;
 
-    font-size:18px;
+    border-radius:15px;
 
-    font-weight:700;
 
     background:
 
     linear-gradient(
-        135deg,
-        #00d4ff,
-        #0077ff
+        90deg,
+        #00e5ff,
+        #00ffa3
     );
 
-    color:white;
+
+    color:#001015;
+
+
+    font-size:17px;
+
+
+    font-weight:800;
+
+
+    cursor:pointer;
+
 
     transition:.3s;
 
+
 }
+
 
 
 .main-button:hover {
 
+
     transform:translateY(-3px);
 
+
     box-shadow:
-    0 10px 40px rgba(0,212,255,.35);
+
+    0 10px 40px rgba(0,229,255,.35);
+
 
 }
 
 
-/* ===============================
-   Cards below
-================================ */
+
+
+
+
+
+
+/* FEATURES */
 
 
 .features {
 
+
+    max-width:1200px;
+
+
+    margin:70px auto;
+
+
+    padding:0 30px;
+
+
     display:grid;
 
+
     grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
+    repeat(3,1fr);
+
 
     gap:25px;
 
-    max-width:1100px;
-
-    margin:80px auto;
-
-    padding:20px;
 
 }
+
 
 
 .feature-card {
 
+
     background:
-    rgba(255,255,255,.04);
+
+    rgba(255,255,255,.05);
+
 
     border:
 
-    1px solid rgba(255,255,255,.08);
+    1px solid rgba(255,255,255,.1);
 
-    border-radius:25px;
 
     padding:30px;
 
-    transition:.3s;
+
+    border-radius:20px;
+
+
+    text-align:center;
+
 
 }
 
-
-.feature-card:hover {
-
-    transform:translateY(-8px);
-
-    border-color:#00d4ff;
-
-}
 
 
 .feature-card h3 {
 
+
+    font-size:22px;
+
+
     margin-bottom:15px;
 
+
 }
+
 
 
 .feature-card p {
 
-    color:#9ca8ba;
+
+    color:#aab4c0;
+
+
+    line-height:1.6;
+
 
 }
 
 
-/* ===============================
-   Footer
-================================ */
+
+
+
+
+
+
+/* FOOTER */
 
 
 footer {
 
+
     text-align:center;
 
-    padding:40px;
 
-    color:#7d8898;
+    padding:50px 20px;
 
-    border-top:
 
-    1px solid rgba(255,255,255,.05);
+    color:#7d8996;
+
+
+    font-size:14px;
+
 
 }
 
 
-/* ===============================
-   Mobile
-================================ */
-
-@media(max-width:700px){
-
-    header {
-
-        padding:20px;
-
-    }
 
 
-    nav {
-
-        display:none;
-
-    }
 
 
-    .exchange-box {
 
-        padding:20px;
+/* MOBILE */
 
-    }
+
+@media(max-width:800px){
+
+
+header {
+
+
+    flex-direction:column;
+
+
+    gap:25px;
+
 
 }
 
-@media(max-width:700px){
-
-    .hero {
-        padding:40px 15px;
-    }
 
 
-    .hero h1 {
-        font-size:38px;
-        line-height:1.1;
-    }
+nav {
 
 
-    .hero p {
-        font-size:16px;
-    }
+    gap:18px;
 
 
-    .exchange-box {
-
-        width:100%;
-
-        margin-top:40px;
-
-        border-radius:22px;
-
-    }
+    flex-wrap:wrap;
 
 
-    .exchange-card {
-
-        padding:20px;
-
-    }
+    justify-content:center;
 
 
-    .exchange-card input,
-    .exchange-card select {
-
-        font-size:16px;
-
-        padding:14px;
-
-    }
+}
 
 
-    .swap-button {
 
-        width:48px;
-
-        height:48px;
-
-        font-size:20px;
-
-    }
+.hero {
 
 
-    .main-button {
-
-        font-size:16px;
-
-        padding:16px;
-
-    }
+    padding-top:40px;
 
 
-    .features {
+}
 
-        grid-template-columns:1fr;
 
-        margin-top:40px;
 
-    }
+.exchange-box {
+
+
+    padding:20px;
+
+
+}
+
+
+
+.features {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.hero h1 {
+
+
+    letter-spacing:-1px;
+
+
+}
 
 
 }
