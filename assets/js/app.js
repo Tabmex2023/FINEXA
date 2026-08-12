@@ -1,9 +1,8 @@
 // FINEXA.exchange
-// Main Application Script
+// Exchange Request System
 
 
 let assets = [];
-let rates = {};
 let methods = [];
 let countries = [];
 let whatsapp = {};
@@ -11,7 +10,7 @@ let whatsapp = {};
 
 
 
-// Load JSON files
+// Load Data
 
 async function loadData() {
 
@@ -19,22 +18,372 @@ async function loadData() {
     try {
 
 
-        const assetsResponse = await fetch("assets/data/assets.json");
-        assets = await assetsResponse.json();
+        const assetsResponse =
+        await fetch("assets/data/assets.json");
+
+        assets =
+        await assetsResponse.json();
 
 
 
-        const ratesResponse = await fetch("assets/data/rates.json");
-        rates = await ratesResponse.json();
+        const methodsResponse =
+        await fetch("assets/data/methods.json");
+
+        methods =
+        await methodsResponse.json();
 
 
 
-        const methodsResponse = await fetch("assets/data/methods.json");
-        methods = await methodsResponse.json();
+        const countriesResponse =
+        await fetch("assets/data/countries.json");
+
+        countries =
+        await countriesResponse.json();
 
 
 
-        const countriesResponse = await fetch("assets/data/countries.json");
+        const whatsappResponse =
+        await fetch("assets/data/whatsapp.json");
+
+        whatsapp =
+        await whatsappResponse.json();
+
+
+
+
+        loadAssets();
+
+        loadMethods();
+
+        loadCountries();
+
+
+
+    }
+
+
+    catch(error) {
+
+
+        console.error(
+            "FINEXA loading error:",
+            error
+        );
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+// Load Assets into FROM and TO
+
+
+function loadAssets(){
+
+
+    const from =
+    document.getElementById("fromAsset");
+
+
+    const to =
+    document.getElementById("toAsset");
+
+
+
+
+    assets.forEach(asset => {
+
+
+
+        let optionFrom =
+        document.createElement("option");
+
+
+
+        optionFrom.value =
+        asset.symbol;
+
+
+
+        optionFrom.textContent =
+        asset.name +
+        " (" +
+        asset.symbol +
+        ")";
+
+
+
+        from.appendChild(optionFrom);
+
+
+
+
+
+
+        let optionTo =
+        document.createElement("option");
+
+
+
+        optionTo.value =
+        asset.symbol;
+
+
+
+        optionTo.textContent =
+        asset.name +
+        " (" +
+        asset.symbol +
+        ")";
+
+
+
+        to.appendChild(optionTo);
+
+
+
+    });
+
+
+}
+
+
+
+
+
+
+
+
+
+// Load Payment Methods
+
+
+function loadMethods(){
+
+
+    const payment =
+    document.getElementById("paymentMethod");
+
+
+
+    methods.forEach(method => {
+
+
+
+        let option =
+        document.createElement("option");
+
+
+
+        option.value =
+        method.name;
+
+
+
+        option.textContent =
+        method.name;
+
+
+
+        payment.appendChild(option);
+
+
+
+    });
+
+
+}
+
+
+
+
+
+
+
+
+
+// Load Countries
+
+
+function loadCountries(){
+
+
+    const country =
+    document.getElementById("country");
+
+
+
+    countries.forEach(item => {
+
+
+
+        let option =
+        document.createElement("option");
+
+
+
+        option.value =
+        item.name;
+
+
+
+        option.textContent =
+        item.name;
+
+
+
+        country.appendChild(option);
+
+
+
+    });
+
+
+
+}
+
+
+
+
+
+
+
+
+
+// Create WhatsApp Request
+
+
+function createWhatsApp(){
+
+
+
+    const from =
+    document.getElementById("fromAsset")
+    .value;
+
+
+
+    const method =
+    document.getElementById("paymentMethod")
+    .value;
+
+
+
+    const amount =
+    document.getElementById("amount")
+    .value;
+
+
+
+    const to =
+    document.getElementById("toAsset")
+    .value;
+
+
+
+    const country =
+    document.getElementById("country")
+    .value;
+
+
+
+
+
+
+    const message =
+
+`Hello FINEXA,
+
+I would like to request an exchange.
+
+FROM:
+${amount} ${from}
+
+Payment Method:
+${method}
+
+TO:
+${to}
+
+Location:
+${country}
+
+Please provide the current exchange details.
+
+Thank you.`;
+
+
+
+
+
+
+
+    const whatsappURL =
+
+    "https://wa.me/"
+    +
+    whatsapp.number
+    +
+    "?text="
+    +
+    encodeURIComponent(message);
+
+
+
+
+
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+
+
+}
+
+
+
+
+
+
+
+
+
+// Start
+
+
+document.addEventListener(
+"DOMContentLoaded",
+()=>{
+
+
+    loadData();
+
+
+
+
+    document
+
+    .getElementById("exchangeButton")
+
+    .addEventListener(
+        "click",
+        createWhatsApp
+    );
+
+
+
+});        const countriesResponse = await fetch("assets/data/countries.json");
         countries = await countriesResponse.json();
 
 
