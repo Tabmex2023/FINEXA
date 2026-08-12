@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,9 +6,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>FINEXA.exchange | Global Crypto & Fiat Exchange Finder</title>
+<title>FINEXA.exchange | Global Fiat & Crypto Exchange</title>
 
-<meta name="description" content="FINEXA.exchange helps you find the best options to exchange Crypto, Fiat and Digital Assets worldwide.">
+<meta name="description" content="FINEXA.exchange allows you to exchange Crypto, Fiat, Gift Cards and Digital Assets worldwide.">
 
 <link rel="stylesheet" href="assets/css/style.css">
 
@@ -54,16 +53,19 @@ Anywhere
 
 
 <p>
-Compare crypto, fiat and digital assets worldwide.
-Find the best exchange option in seconds.
+Exchange Crypto, Fiat, Gift Cards and Digital Assets worldwide.
+Simple. Fast. Transparent.
 </p>
+
+
 
 
 
 <div class="exchange-box">
 
 
-<!-- FROM -->
+
+<!-- FROM ASSET -->
 
 <div class="exchange-card">
 
@@ -73,20 +75,30 @@ FROM
 </label>
 
 
-<select>
+<select id="fromAsset">
 
-<option>EUR - Euro</option>
-<option>USD - US Dollar</option>
-<option>MXN - Mexican Peso</option>
-<option>BTC - Bitcoin</option>
-<option>ETH - Ethereum</option>
-<option>USDT - Tether</option>
-<option>Gift Card</option>
+<option value="">
+Select asset
+</option>
 
 </select>
 
 
-<br><br>
+
+<label>
+Payment Method
+</label>
+
+
+<select id="fromMethod">
+
+<option value="">
+Select payment method
+</option>
+
+</select>
+
+
 
 
 <label>
@@ -95,43 +107,12 @@ Amount
 
 
 <input 
+id="amount"
 type="number"
-placeholder="1000">
+placeholder="Enter amount">
 
 
 </div>
-
-
-
-
-
-<!-- PAYMENT -->
-
-
-<div class="exchange-card">
-
-
-<label>
-PAYMENT METHOD
-</label>
-
-
-<select>
-
-<option>Bank Transfer</option>
-<option>Credit Card</option>
-<option>Debit Card</option>
-<option>PayPal</option>
-<option>Revolut</option>
-<option>Wise</option>
-<option>Cash</option>
-<option>Crypto Wallet</option>
-
-</select>
-
-
-</div>
-
 
 
 
@@ -148,7 +129,7 @@ PAYMENT METHOD
 
 
 
-<!-- TO -->
+<!-- TO ASSET -->
 
 
 <div class="exchange-card">
@@ -159,35 +140,33 @@ TO
 </label>
 
 
-<select>
+<select id="toAsset">
 
-<option>Bitcoin (BTC)</option>
-<option>Ethereum (ETH)</option>
-<option>USDT</option>
-<option>EUR - Euro</option>
-<option>USD - Dollar</option>
-<option>MXN - Peso</option>
-<option>Gift Card</option>
+
+<option value="">
+Select asset
+</option>
+
 
 </select>
 
 
 
-<br><br>
-
 
 <label>
-You receive approximately
+You will receive
 </label>
 
 
-<input 
+<input
+id="receiveAmount"
 type="text"
 placeholder="Automatic calculation"
 disabled>
 
 
 </div>
+
 
 
 
@@ -205,15 +184,12 @@ Location
 </label>
 
 
-<select>
+<select id="country">
 
-<option>Germany</option>
-<option>Netherlands</option>
-<option>Mexico</option>
-<option>United States</option>
-<option>Spain</option>
-<option>France</option>
-<option>Worldwide</option>
+
+<option value="">
+Select country
+</option>
 
 
 </select>
@@ -226,11 +202,40 @@ Location
 
 
 
-<button class="main-button">
+<!-- RATE DISPLAY -->
 
-FIND BEST RATE
+
+<div class="rate-box">
+
+
+<p>
+Exchange Rate
+</p>
+
+
+<h3 id="exchangeRate">
+Waiting for selection...
+</h3>
+
+
+</div>
+
+
+
+
+
+
+<button 
+id="exchangeButton"
+class="main-button">
+
+
+EXCHANGE NOW
+
 
 </button>
+
+
 
 
 
@@ -245,6 +250,7 @@ FIND BEST RATE
 
 
 
+
 <section class="features">
 
 
@@ -252,16 +258,17 @@ FIND BEST RATE
 
 
 <h3>
-₿ Crypto Exchange
+₿ Crypto
 </h3>
 
 
 <p>
-Compare Bitcoin, Ethereum, stablecoins and other digital assets from trusted providers.
+Bitcoin, Ethereum, USDT, USDC and other major digital assets.
 </p>
 
 
 </div>
+
 
 
 
@@ -270,16 +277,17 @@ Compare Bitcoin, Ethereum, stablecoins and other digital assets from trusted pro
 
 
 <h3>
-💶 Fiat Exchange
+💶 Fiat
 </h3>
 
 
 <p>
-Find the best conversion options between global currencies.
+Exchange worldwide currencies with transparent rates.
 </p>
 
 
 </div>
+
 
 
 
@@ -293,7 +301,7 @@ Find the best conversion options between global currencies.
 
 
 <p>
-Buy and sell digital vouchers with transparent prices.
+Buy and sell popular digital vouchers instantly.
 </p>
 
 
@@ -301,6 +309,7 @@ Buy and sell digital vouchers with transparent prices.
 
 
 </section>
+
 
 
 
@@ -315,28 +324,12 @@ Buy and sell digital vouchers with transparent prices.
 
 
 <h3>
-Live Markets
+Fast Exchange Request
 </h3>
 
 
 <p>
-
-BTC/USD  
-<br>
-$102,450
-
-<br><br>
-
-ETH/USD
-<br>
-$4,820
-
-<br><br>
-
-USDT/USD
-<br>
-$1.00
-
+Submit your exchange details and contact FINEXA directly through WhatsApp.
 </p>
 
 
@@ -345,16 +338,17 @@ $1.00
 
 
 
+
 <div class="feature-card">
 
 
 <h3>
-Global Access
+Global Service
 </h3>
 
 
 <p>
-FINEXA connects users with available exchange partners worldwide.
+Users worldwide can request exchanges in multiple currencies.
 </p>
 
 
@@ -363,16 +357,17 @@ FINEXA connects users with available exchange partners worldwide.
 
 
 
+
 <div class="feature-card">
 
 
 <h3>
-Trusted Partners
+Simple & Transparent
 </h3>
 
 
 <p>
-Compare offers from leading digital asset platforms.
+See your estimated amount before contacting FINEXA.
 </p>
 
 
@@ -387,20 +382,17 @@ Compare offers from leading digital asset platforms.
 
 
 
+
 <footer>
 
 
 <p>
-
 FINEXA.exchange
-
 </p>
 
 
 <p>
-
 Crypto • Fiat • Gift Cards • Digital Assets
-
 </p>
 
 
@@ -408,13 +400,14 @@ Crypto • Fiat • Gift Cards • Digital Assets
 
 
 <p>
-
 © 2026 FINEXA.exchange. All rights reserved.
-
 </p>
 
 
 </footer>
+
+
+
 
 
 
