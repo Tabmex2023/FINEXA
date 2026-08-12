@@ -4,11 +4,14 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 <title>FINEXA.exchange | Global Crypto, Fiat & Gift Card Exchange</title>
 
-<meta name="description" content="FINEXA.exchange helps you exchange Crypto, Fiat, Cash and Gift Cards worldwide.">
+
+<meta name="description" content="FINEXA.exchange provides global exchange requests for crypto, fiat, cash and gift cards.">
 
 
 <link rel="stylesheet" href="assets/css/style.css">
@@ -28,13 +31,673 @@
 
 
 <div class="logo">
+
 FINEXA<span>.exchange</span>
+
 </div>
+
 
 
 <nav>
 
 <a href="#">Crypto</a>
+
+<a href="#">Fiat</a>
+
+<a href="#">Gift Cards</a>
+
+<a href="#">FAQ</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+<section class="hero">
+
+
+
+<h1>
+
+Exchange <span>Anything</span><br>
+
+Anywhere
+
+</h1>
+
+
+
+
+<p>
+
+Crypto • Fiat • Cash • Gift Cards<br>
+
+Global exchange requests made simple.
+
+</p>
+
+
+
+
+
+
+
+
+<div class="exchange-box">
+
+
+
+
+
+<!-- FROM -->
+
+
+<div class="exchange-card">
+
+
+<label>
+FROM
+</label>
+
+
+
+<select id="fromAsset">
+
+
+<option value="">
+Select asset
+</option>
+
+
+<optgroup label="Crypto">
+
+
+<option>Bitcoin (BTC)</option>
+
+<option>Ethereum (ETH)</option>
+
+<option>Tether (USDT)</option>
+
+<option>USD Coin (USDC)</option>
+
+<option>BNB (BNB)</option>
+
+<option>Solana (SOL)</option>
+
+<option>XRP (XRP)</option>
+
+<option>Cardano (ADA)</option>
+
+<option>Dogecoin (DOGE)</option>
+
+<option>Monero (XMR)</option>
+
+
+</optgroup>
+
+
+
+
+<optgroup label="Fiat">
+
+
+<option>Euro (EUR)</option>
+
+<option>US Dollar (USD)</option>
+
+<option>British Pound (GBP)</option>
+
+<option>Swiss Franc (CHF)</option>
+
+<option>Mexican Peso (MXN)</option>
+
+<option>Canadian Dollar (CAD)</option>
+
+<option>Australian Dollar (AUD)</option>
+
+
+</optgroup>
+
+
+
+
+
+<optgroup label="Gift Cards">
+
+
+<option>Amazon Gift Card</option>
+
+<option>Apple Gift Card</option>
+
+<option>Google Play Gift Card</option>
+
+<option>Steam Gift Card</option>
+
+<option>PlayStation Gift Card</option>
+
+<option>Xbox Gift Card</option>
+
+<option>Paysafecard</option>
+
+<option>Netflix Gift Card</option>
+
+<option>Spotify Gift Card</option>
+
+
+</optgroup>
+
+
+
+
+
+
+<optgroup label="Cash">
+
+
+<option>EUR Cash</option>
+
+<option>USD Cash</option>
+
+<option>MXN Cash</option>
+
+<option>GBP Cash</option>
+
+<option>CHF Cash</option>
+
+
+</optgroup>
+
+
+</select>
+
+
+
+
+
+
+
+<label>
+PAYMENT METHOD
+</label>
+
+
+
+<select id="paymentMethod">
+
+
+<option value="">
+Select payment method
+</option>
+
+
+<option>Bank Transfer</option>
+
+<option>Crypto Wallet</option>
+
+<option>Cash</option>
+
+<option>Credit Card</option>
+
+<option>Debit Card</option>
+
+<option>PayPal</option>
+
+<option>Revolut</option>
+
+<option>Wise</option>
+
+<option>Gift Card Code</option>
+
+
+</select>
+
+
+
+
+
+
+
+<label>
+AMOUNT
+</label>
+
+
+
+<input
+
+id="amount"
+
+type="number"
+
+placeholder="Enter amount">
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="swap-button">
+
+⇅
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- TO -->
+
+
+<div class="exchange-card">
+
+
+<label>
+TO
+</label>
+
+
+
+<select id="toAsset">
+
+
+<option value="">
+Select asset
+</option>
+
+
+
+<optgroup label="Crypto">
+
+
+<option>Bitcoin (BTC)</option>
+
+<option>Ethereum (ETH)</option>
+
+<option>Tether (USDT)</option>
+
+<option>USD Coin (USDC)</option>
+
+<option>BNB (BNB)</option>
+
+<option>Solana (SOL)</option>
+
+<option>XRP (XRP)</option>
+
+<option>Cardano (ADA)</option>
+
+<option>Dogecoin (DOGE)</option>
+
+<option>Monero (XMR)</option>
+
+
+</optgroup>
+
+
+
+
+
+<optgroup label="Fiat">
+
+
+<option>Euro (EUR)</option>
+
+<option>US Dollar (USD)</option>
+
+<option>British Pound (GBP)</option>
+
+<option>Swiss Franc (CHF)</option>
+
+<option>Mexican Peso (MXN)</option>
+
+
+</optgroup>
+
+
+
+
+
+<optgroup label="Gift Cards">
+
+
+<option>Amazon Gift Card</option>
+
+<option>Apple Gift Card</option>
+
+<option>Steam Gift Card</option>
+
+<option>Paysafecard</option>
+
+<option>PlayStation Gift Card</option>
+
+
+</optgroup>
+
+
+
+
+<optgroup label="Cash">
+
+
+<option>EUR Cash</option>
+
+<option>USD Cash</option>
+
+<option>MXN Cash</option>
+
+
+</optgroup>
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- LOCATION -->
+
+
+<div class="location">
+
+
+<label>
+LOCATION
+</label>
+
+
+
+<select id="country">
+
+
+<option>Select country</option>
+
+<option>Germany</option>
+
+<option>Netherlands</option>
+
+<option>Mexico</option>
+
+<option>United States</option>
+
+<option>Canada</option>
+
+<option>Spain</option>
+
+<option>France</option>
+
+<option>United Kingdom</option>
+
+<option>Switzerland</option>
+
+<option>Brazil</option>
+
+<option>Argentina</option>
+
+<option>Colombia</option>
+
+<option>Chile</option>
+
+<option>Worldwide</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+
+
+
+<button
+
+id="exchangeButton"
+
+class="main-button">
+
+
+REQUEST EXCHANGE
+
+
+</button>
+
+
+
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="features">
+
+
+
+<div class="feature-card">
+
+
+<h3>
+₿ Crypto
+</h3>
+
+
+<p>
+
+Bitcoin, Ethereum, stablecoins and major cryptocurrencies.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+💶 Fiat
+</h3>
+
+
+<p>
+
+Worldwide currencies and cash exchange requests.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+🎁 Gift Cards
+</h3>
+
+
+<p>
+
+Popular digital vouchers worldwide.
+
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="features">
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Global Access
+</h3>
+
+
+<p>
+
+Exchange requests from customers around the world.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Personal Service
+</h3>
+
+
+<p>
+
+Every request is handled directly by FINEXA.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Fast Response
+</h3>
+
+
+<p>
+
+Contact FINEXA instantly through WhatsApp.
+
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<footer>
+
+
+<p>
+FINEXA.exchange
+</p>
+
+
+<p>
+Crypto • Fiat • Cash • Gift Cards
+</p>
+
+
+
+<br>
+
+
+
+<p>
+© 2026 FINEXA.exchange
+</p>
+
+
+
+</footer>
+
+
+
+
+
+
+<script src="assets/js/app.js"></script>
+
+
+
+</body>
+
+</html><a href="#">Crypto</a>
 <a href="#">Fiat</a>
 <a href="#">Gift Cards</a>
 <a href="#">FAQ</a>
