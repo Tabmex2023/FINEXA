@@ -25,11 +25,6 @@ document
 
 
 
-    const paymentMethod =
-    document.getElementById("paymentMethod").value;
-
-
-
     const amount =
     document.getElementById("amount").value;
 
@@ -87,9 +82,6 @@ I would like to request an exchange.
 
 FROM:
 ${amount} ${fromAsset}
-
-Payment Method:
-${paymentMethod}
 
 TO:
 ${toAsset}
