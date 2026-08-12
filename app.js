@@ -4,21 +4,15 @@
 // =====================================
 
 
-// FINEXA WhatsApp Number
 const whatsappNumber = "526732304964";
 
 
 
-
-// Button Event
-
 document
 .getElementById("exchangeButton")
-.addEventListener("click", function(){
+.addEventListener("click", function () {
 
 
-
-    // Get values
 
     const fromAsset =
     document.getElementById("fromAsset").value;
@@ -43,16 +37,12 @@ document
 
 
 
-    // Validation
-
-
-    if(
+    if (
         fromAsset === "" ||
-        paymentMethod === "" ||
         amount === "" ||
         toAsset === "" ||
         country === ""
-    ){
+    ) {
 
 
         alert(
@@ -69,9 +59,6 @@ document
 
 
 
-
-
-    // Create WhatsApp Message
 
 
     const message =
@@ -100,9 +87,6 @@ Thank you.`;
 
 
 
-    // Create WhatsApp URL
-
-
     const whatsappURL =
 
     "https://wa.me/"
@@ -113,10 +97,6 @@ Thank you.`;
 
 
 
-
-
-
-    // Open WhatsApp
 
 
     window.open(
