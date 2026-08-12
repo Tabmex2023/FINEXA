@@ -36,7 +36,6 @@ document
 
 
 
-
     if (
         fromAsset === "" ||
         amount === "" ||
