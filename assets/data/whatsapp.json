@@ -1,1 +1,4 @@
-
+{
+    "number": "526732304964",
+    "message": "Hello FINEXA,\n\nI would like to make an exchange.\n\nFROM:\n{amount} {from}\n\nPayment Method:\n{method}\n\nTO:\n{to}\n\nReceive:\n{receive}\n\nLocation:\n{country}\n\nPlease confirm my exchange."
+}
