@@ -1,0 +1,669 @@
+/* =====================================
+   FINEXA.exchange
+   Premium Dark FinTech Style
+===================================== */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: 'Inter', sans-serif;
+
+    background:
+    radial-gradient(circle at top, #122535 0%, #05070a 45%, #000 100%);
+
+    color: #ffffff;
+
+    min-height: 100vh;
+
+}
+
+
+
+
+
+/* HEADER */
+
+header {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 30px 8%;
+
+}
+
+
+.logo {
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+
+}
+
+
+.logo span {
+
+    color: #00e5ff;
+
+}
+
+
+
+nav {
+
+    display: flex;
+
+    gap: 35px;
+
+}
+
+
+
+nav a {
+
+    text-decoration: none;
+
+    color: #aab4c0;
+
+    font-size: 15px;
+
+    transition: .3s;
+
+}
+
+
+
+nav a:hover {
+
+    color: #00e5ff;
+
+}
+
+
+
+
+
+
+/* HERO */
+
+
+.hero {
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+}
+
+
+
+.hero h1 {
+
+    font-size: clamp(45px, 6vw, 80px);
+
+    line-height: 1.05;
+
+    letter-spacing: -3px;
+
+    font-weight: 800;
+
+}
+
+
+
+.hero h1 span {
+
+    color: #00e5ff;
+
+}
+
+
+
+.hero p {
+
+    margin-top: 25px;
+
+    color: #aab4c0;
+
+    font-size: 19px;
+
+    line-height: 1.6;
+
+}
+
+
+
+
+
+
+
+/* EXCHANGE BOX */
+
+
+.exchange-box {
+
+
+    max-width: 850px;
+
+    margin: 55px auto 0;
+
+
+    padding: 35px;
+
+
+    background:
+
+    rgba(255,255,255,0.05);
+
+
+    border:
+
+    1px solid rgba(255,255,255,0.12);
+
+
+    border-radius: 25px;
+
+
+    backdrop-filter: blur(20px);
+
+
+    box-shadow:
+
+    0 30px 80px rgba(0,0,0,.5);
+
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+
+}
+
+
+
+
+
+
+/* CARDS */
+
+
+.exchange-card {
+
+
+    background:
+
+    rgba(0,0,0,.35);
+
+
+    padding: 25px;
+
+
+    border-radius: 18px;
+
+
+    border:
+
+    1px solid rgba(255,255,255,.08);
+
+
+    text-align: left;
+
+}
+
+
+
+
+
+label {
+
+
+    display:block;
+
+
+    margin-bottom:10px;
+
+
+    color:#9ca8b5;
+
+
+    font-size:13px;
+
+
+    font-weight:700;
+
+
+    letter-spacing:1px;
+
+
+    text-transform:uppercase;
+
+
+}
+
+
+
+
+
+select,
+input {
+
+
+    width:100%;
+
+
+    padding:16px;
+
+
+    margin-bottom:22px;
+
+
+    background:#111820;
+
+
+    color:white;
+
+
+    border-radius:12px;
+
+
+    border:
+
+    1px solid rgba(255,255,255,.15);
+
+
+    font-size:16px;
+
+
+    outline:none;
+
+
+}
+
+
+
+select:hover,
+input:hover {
+
+
+    border-color:#00e5ff;
+
+}
+
+
+
+select:focus,
+input:focus {
+
+
+    border-color:#00e5ff;
+
+
+}
+
+
+
+
+
+
+/* SWAP ICON */
+
+
+.swap-button {
+
+
+    width:60px;
+
+    height:60px;
+
+
+    margin:auto;
+
+
+    border-radius:50%;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    font-size:28px;
+
+
+    font-weight:bold;
+
+
+    background:#00e5ff;
+
+
+    color:#001018;
+
+
+}
+
+
+
+
+
+
+
+/* LOCATION */
+
+
+.location {
+
+
+    background:
+
+    rgba(255,255,255,.04);
+
+
+    padding:25px;
+
+
+    border-radius:18px;
+
+
+    text-align:left;
+
+
+}
+
+
+
+
+
+
+
+
+/* BUTTON */
+
+
+.main-button {
+
+
+    width:100%;
+
+
+    padding:20px;
+
+
+    border:none;
+
+
+    border-radius:15px;
+
+
+    cursor:pointer;
+
+
+    font-size:17px;
+
+
+    font-weight:800;
+
+
+    color:#001018;
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #00e5ff,
+        #00ffa3
+    );
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.main-button:hover {
+
+
+    transform:translateY(-3px);
+
+
+    box-shadow:
+
+    0 15px 40px rgba(0,229,255,.35);
+
+
+}
+
+
+
+
+
+
+
+
+/* FEATURES */
+
+
+.features {
+
+
+    max-width:1200px;
+
+
+    margin:70px auto;
+
+
+    padding:0 30px;
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+
+    gap:25px;
+
+
+}
+
+
+
+
+.feature-card {
+
+
+    padding:30px;
+
+
+    border-radius:20px;
+
+
+    text-align:center;
+
+
+    background:
+
+    rgba(255,255,255,.05);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.1);
+
+
+}
+
+
+
+.feature-card h3 {
+
+
+    font-size:22px;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.feature-card p {
+
+
+    color:#aab4c0;
+
+
+    line-height:1.6;
+
+
+}
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+footer {
+
+
+    text-align:center;
+
+
+    padding:50px 20px;
+
+
+    color:#7e8995;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:800px){
+
+
+header {
+
+
+    flex-direction:column;
+
+
+    gap:25px;
+
+
+}
+
+
+
+nav {
+
+
+    gap:20px;
+
+
+    flex-wrap:wrap;
+
+
+    justify-content:center;
+
+
+}
+
+
+
+.hero {
+
+
+    padding-top:40px;
+
+
+}
+
+
+
+.hero h1 {
+
+
+    letter-spacing:-1px;
+
+
+}
+
+
+
+.exchange-box {
+
+
+    padding:20px;
+
+
+}
+
+
+
+.exchange-card {
+
+
+    padding:20px;
+
+
+}
+
+
+
+.features {
+
+
+    grid-template-columns:1fr;
+
+
+    padding:0 20px;
+
+
+}
+
+
+
+}
