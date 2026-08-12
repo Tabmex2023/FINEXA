@@ -1,1 +1,39 @@
 
+[
+    {
+        "name": "Bank Transfer",
+        "type": "Fiat"
+    },
+    {
+        "name": "Cash",
+        "type": "Fiat"
+    },
+    {
+        "name": "PayPal",
+        "type": "Digital"
+    },
+    {
+        "name": "Wise",
+        "type": "Digital"
+    },
+    {
+        "name": "Revolut",
+        "type": "Digital"
+    },
+    {
+        "name": "Credit Card",
+        "type": "Digital"
+    },
+    {
+        "name": "Debit Card",
+        "type": "Digital"
+    },
+    {
+        "name": "Crypto Wallet",
+        "type": "Crypto"
+    },
+    {
+        "name": "Gift Card Code",
+        "type": "Gift Card"
+    }
+]
