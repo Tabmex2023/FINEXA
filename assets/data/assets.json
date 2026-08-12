@@ -2,167 +2,381 @@
     {
         "name": "Euro",
         "symbol": "EUR",
-        "type": "Fiat",
-        "method": "Bank Transfer"
+        "type": "Fiat"
     },
     {
         "name": "US Dollar",
         "symbol": "USD",
-        "type": "Fiat",
-        "method": "Bank Transfer"
-    },
-    {
-        "name": "Mexican Peso",
-        "symbol": "MXN",
-        "type": "Fiat",
-        "method": "Bank Transfer"
+        "type": "Fiat"
     },
     {
         "name": "British Pound",
         "symbol": "GBP",
-        "type": "Fiat",
-        "method": "Bank Transfer"
+        "type": "Fiat"
     },
     {
         "name": "Swiss Franc",
         "symbol": "CHF",
-        "type": "Fiat",
-        "method": "Bank Transfer"
+        "type": "Fiat"
     },
+    {
+        "name": "Canadian Dollar",
+        "symbol": "CAD",
+        "type": "Fiat"
+    },
+    {
+        "name": "Australian Dollar",
+        "symbol": "AUD",
+        "type": "Fiat"
+    },
+    {
+        "name": "New Zealand Dollar",
+        "symbol": "NZD",
+        "type": "Fiat"
+    },
+    {
+        "name": "Mexican Peso",
+        "symbol": "MXN",
+        "type": "Fiat"
+    },
+    {
+        "name": "Brazilian Real",
+        "symbol": "BRL",
+        "type": "Fiat"
+    },
+    {
+        "name": "Argentine Peso",
+        "symbol": "ARS",
+        "type": "Fiat"
+    },
+    {
+        "name": "Chilean Peso",
+        "symbol": "CLP",
+        "type": "Fiat"
+    },
+    {
+        "name": "Colombian Peso",
+        "symbol": "COP",
+        "type": "Fiat"
+    },
+    {
+        "name": "Peruvian Sol",
+        "symbol": "PEN",
+        "type": "Fiat"
+    },
+    {
+        "name": "Japanese Yen",
+        "symbol": "JPY",
+        "type": "Fiat"
+    },
+    {
+        "name": "Chinese Yuan",
+        "symbol": "CNY",
+        "type": "Fiat"
+    },
+    {
+        "name": "Hong Kong Dollar",
+        "symbol": "HKD",
+        "type": "Fiat"
+    },
+    {
+        "name": "Singapore Dollar",
+        "symbol": "SGD",
+        "type": "Fiat"
+    },
+    {
+        "name": "South Korean Won",
+        "symbol": "KRW",
+        "type": "Fiat"
+    },
+    {
+        "name": "Indian Rupee",
+        "symbol": "INR",
+        "type": "Fiat"
+    },
+    {
+        "name": "Indonesian Rupiah",
+        "symbol": "IDR",
+        "type": "Fiat"
+    },
+    {
+        "name": "Thai Baht",
+        "symbol": "THB",
+        "type": "Fiat"
+    },
+    {
+        "name": "Vietnamese Dong",
+        "symbol": "VND",
+        "type": "Fiat"
+    },
+    {
+        "name": "Philippine Peso",
+        "symbol": "PHP",
+        "type": "Fiat"
+    },
+    {
+        "name": "Malaysian Ringgit",
+        "symbol": "MYR",
+        "type": "Fiat"
+    },
+    {
+        "name": "United Arab Emirates Dirham",
+        "symbol": "AED",
+        "type": "Fiat"
+    },
+    {
+        "name": "Saudi Riyal",
+        "symbol": "SAR",
+        "type": "Fiat"
+    },
+    {
+        "name": "Turkish Lira",
+        "symbol": "TRY",
+        "type": "Fiat"
+    },
+    {
+        "name": "South African Rand",
+        "symbol": "ZAR",
+        "type": "Fiat"
+    },
+    {
+        "name": "Egyptian Pound",
+        "symbol": "EGP",
+        "type": "Fiat"
+    },
+    {
+        "name": "Nigerian Naira",
+        "symbol": "NGN",
+        "type": "Fiat"
+    },
+    {
+        "name": "Kenyan Shilling",
+        "symbol": "KES",
+        "type": "Fiat"
+    },
+    {
+        "name": "Polish Zloty",
+        "symbol": "PLN",
+        "type": "Fiat"
+    },
+    {
+        "name": "Czech Koruna",
+        "symbol": "CZK",
+        "type": "Fiat"
+    },
+    {
+        "name": "Hungarian Forint",
+        "symbol": "HUF",
+        "type": "Fiat"
+    },
+    {
+        "name": "Romanian Leu",
+        "symbol": "RON",
+        "type": "Fiat"
+    },
+    {
+        "name": "Bulgarian Lev",
+        "symbol": "BGN",
+        "type": "Fiat"
+    },
+    {
+        "name": "Norwegian Krone",
+        "symbol": "NOK",
+        "type": "Fiat"
+    },
+    {
+        "name": "Swedish Krona",
+        "symbol": "SEK",
+        "type": "Fiat"
+    },
+    {
+        "name": "Danish Krone",
+        "symbol": "DKK",
+        "type": "Fiat"
+    }
+]
 
-
+[
     {
         "name": "Bitcoin",
         "symbol": "BTC",
-        "type": "Crypto",
-        "method": "Crypto Wallet"
+        "type": "Crypto"
     },
     {
         "name": "Ethereum",
         "symbol": "ETH",
-        "type": "Crypto",
-        "method": "Crypto Wallet"
+        "type": "Crypto"
     },
-    {
-        "name": "Solana",
-        "symbol": "SOL",
-        "type": "Crypto",
-        "method": "Crypto Wallet"
-    },
-    {
-        "name": "XRP",
-        "symbol": "XRP",
-        "type": "Crypto",
-        "method": "Crypto Wallet"
-    },
-    {
-        "name": "Litecoin",
-        "symbol": "LTC",
-        "type": "Crypto",
-        "method": "Crypto Wallet"
-    },
-
-
     {
         "name": "Tether",
         "symbol": "USDT",
-        "type": "Stablecoin",
-        "method": "Crypto Wallet"
+        "type": "Crypto"
     },
     {
         "name": "USD Coin",
         "symbol": "USDC",
-        "type": "Stablecoin",
-        "method": "Crypto Wallet"
+        "type": "Crypto"
     },
     {
-        "name": "DAI",
-        "symbol": "DAI",
-        "type": "Stablecoin",
-        "method": "Crypto Wallet"
-    },
-
-
-    {
-        "name": "Cash Euro",
-        "symbol": "EUR-CASH",
-        "type": "Cash",
-        "method": "Cash Exchange"
+        "name": "BNB",
+        "symbol": "BNB",
+        "type": "Crypto"
     },
     {
-        "name": "Cash US Dollar",
-        "symbol": "USD-CASH",
-        "type": "Cash",
-        "method": "Cash Exchange"
+        "name": "Solana",
+        "symbol": "SOL",
+        "type": "Crypto"
     },
     {
-        "name": "Cash Mexican Peso",
-        symbol": "MXN-CASH",
-        "type": "Cash",
-        "method": "Cash Exchange"
+        "name": "XRP",
+        "symbol": "XRP",
+        "type": "Crypto"
     },
-
-
+    {
+        "name": "Cardano",
+        "symbol": "ADA",
+        "type": "Crypto"
+    },
+    {
+        "name": "Dogecoin",
+        "symbol": "DOGE",
+        "type": "Crypto"
+    },
+    {
+        "name": "Avalanche",
+        "symbol": "AVAX",
+        "type": "Crypto"
+    },
+    {
+        "name": "Polkadot",
+        "symbol": "DOT",
+        "type": "Crypto"
+    },
+    {
+        "name": "Chainlink",
+        "symbol": "LINK",
+        "type": "Crypto"
+    },
+    {
+        "name": "Litecoin",
+        "symbol": "LTC",
+        "type": "Crypto"
+    },
+    {
+        "name": "Bitcoin Cash",
+        "symbol": "BCH",
+        "type": "Crypto"
+    },
+    {
+        "name": "TRON",
+        "symbol": "TRX",
+        "type": "Crypto"
+    },
+    {
+        "name": "Monero",
+        "symbol": "XMR",
+        "type": "Crypto"
+    }
+]
+[
     {
         "name": "Amazon Gift Card",
         "symbol": "AMAZON",
-        "type": "Gift Card",
-        "method": "Gift Card Code"
+        "type": "Gift Card"
     },
     {
         "name": "Apple Gift Card",
         "symbol": "APPLE",
-        "type": "Gift Card",
-        "method": "Gift Card Code"
+        "type": "Gift Card"
     },
     {
         "name": "Google Play Gift Card",
-        "symbol": "GOOGLEPLAY",
-        "type": "Gift Card",
-        "method": "Gift Card Code"
+        "symbol": "GOOGLE_PLAY",
+        "type": "Gift Card"
     },
     {
         "name": "Steam Gift Card",
         "symbol": "STEAM",
-        "type": "Gift Card",
-        "method": "Gift Card Code"
+        "type": "Gift Card"
     },
     {
         "name": "PlayStation Gift Card",
         "symbol": "PLAYSTATION",
-        "type": "Gift Card",
-        "method": "Gift Card Code"
+        "type": "Gift Card"
     },
     {
         "name": "Xbox Gift Card",
         "symbol": "XBOX",
-        "type": "Gift Card",
-        "method": "Gift Card Code"
-    },
-
-
-    {
-        "name": "PayPal Balance",
-        "symbol": "PAYPAL",
-        "type": "Digital Payment",
-        "method": "PayPal"
+        "type": "Gift Card"
     },
     {
-        "name": "Revolut Balance",
-        "symbol": "REVOLUT",
-        "type": "Digital Payment",
-        "method": "Revolut"
+        "name": "Paysafecard",
+        "symbol": "PAYSAFE",
+        "type": "Gift Card"
     },
     {
-        "name": "Wise Balance",
-        "symbol": "WISE",
-        "type": "Digital Payment",
-        "method": "Wise"
+        "name": "Netflix Gift Card",
+        "symbol": "NETFLIX",
+        "type": "Gift Card"
     },
     {
-        "name": "Mercado Pago Balance",
-        "symbol": "MERCADOPAGO",
-        "type": "Digital Payment",
-        "method": "Mercado Pago"
+        "name": "Spotify Gift Card",
+        "symbol": "SPOTIFY",
+        "type": "Gift Card"
+    },
+    {
+        "name": "Uber Gift Card",
+        "symbol": "UBER",
+        "type": "Gift Card"
+    },
+    {
+        "name": "Uber Eats Gift Card",
+        "symbol": "UBER_EATS",
+        "type": "Gift Card"
+    },
+    {
+        "name": "Airbnb Gift Card",
+        "symbol": "AIRBNB",
+        "type": "Gift Card"
+    },
+    {
+        "name": "Walmart Gift Card",
+        "symbol": "WALMART",
+        "type": "Gift Card"
+    },
+    {
+        "name": "Target Gift Card",
+        "symbol": "TARGET",
+        "type": "Gift Card"
+    },
+    {
+        "name": "Best Buy Gift Card",
+        "symbol": "BESTBUY",
+        "type": "Gift Card"
+    },
+    {
+        "name": "Nike Gift Card",
+        "symbol": "NIKE",
+        "type": "Gift Card"
+    },
+    {
+        "name": "Adidas Gift Card",
+        "symbol": "ADIDAS",
+        "type": "Gift Card"
+    },
+    {
+        "name": "Zalando Gift Card",
+        "symbol": "ZALANDO",
+        "type": "Gift Card"
+    },
+    {
+        "name": "Nintendo Gift Card",
+        "symbol": "NINTENDO",
+        "type": "Gift Card"
+    },
+    {
+        "name": "Roblox Gift Card",
+        "symbol": "ROBLOX",
+        "type": "Gift Card"
     }
 ]
