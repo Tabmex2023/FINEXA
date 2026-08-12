@@ -383,3 +383,80 @@ footer {
     }
 
 }
+
+@media(max-width:700px){
+
+    .hero {
+        padding:40px 15px;
+    }
+
+
+    .hero h1 {
+        font-size:38px;
+        line-height:1.1;
+    }
+
+
+    .hero p {
+        font-size:16px;
+    }
+
+
+    .exchange-box {
+
+        width:100%;
+
+        margin-top:40px;
+
+        border-radius:22px;
+
+    }
+
+
+    .exchange-card {
+
+        padding:20px;
+
+    }
+
+
+    .exchange-card input,
+    .exchange-card select {
+
+        font-size:16px;
+
+        padding:14px;
+
+    }
+
+
+    .swap-button {
+
+        width:48px;
+
+        height:48px;
+
+        font-size:20px;
+
+    }
+
+
+    .main-button {
+
+        font-size:16px;
+
+        padding:16px;
+
+    }
+
+
+    .features {
+
+        grid-template-columns:1fr;
+
+        margin-top:40px;
+
+    }
+
+
+}
