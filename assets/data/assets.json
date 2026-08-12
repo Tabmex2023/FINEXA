@@ -380,3 +380,106 @@
         "type": "Gift Card"
     }
 ]
+
+[
+    {
+        "name": "Euro Cash",
+        "symbol": "EUR-CASH",
+        "type": "Cash"
+    },
+    {
+        "name": "US Dollar Cash",
+        "symbol": "USD-CASH",
+        "type": "Cash"
+    },
+    {
+        "name": "British Pound Cash",
+        "symbol": "GBP-CASH",
+        "type": "Cash"
+    },
+    {
+        "name": "Swiss Franc Cash",
+        "symbol": "CHF-CASH",
+        "type": "Cash"
+    },
+    {
+        "name": "Canadian Dollar Cash",
+        "symbol": "CAD-CASH",
+        "type": "Cash"
+    },
+    {
+        "name": "Australian Dollar Cash",
+        "symbol": "AUD-CASH",
+        "type": "Cash"
+    },
+    {
+        "name": "Mexican Peso Cash",
+        "symbol": "MXN-CASH",
+        "type": "Cash"
+    },
+    {
+        "name": "Brazilian Real Cash",
+        "symbol": "BRL-CASH",
+        "type": "Cash"
+    },
+    {
+        "name": "Argentine Peso Cash",
+        "symbol": "ARS-CASH",
+        "type": "Cash"
+    },
+    {
+        "name": "Chilean Peso Cash",
+        "symbol": "CLP-CASH",
+        "type": "Cash"
+    },
+    {
+        "name": "Colombian Peso Cash",
+        "symbol": "COP-CASH",
+        "type": "Cash"
+    },
+    {
+        "name": "Japanese Yen Cash",
+        "symbol": "JPY-CASH",
+        "type": "Cash"
+    },
+    {
+        "name": "Chinese Yuan Cash",
+        "symbol": "CNY-CASH",
+        "type": "Cash"
+    },
+    {
+        "name": "Indian Rupee Cash",
+        "symbol": "INR-CASH",
+        "type": "Cash"
+    },
+    {
+        "name": "Thai Baht Cash",
+        "symbol": "THB-CASH",
+        "type": "Cash"
+    },
+    {
+        "name": "Turkish Lira Cash",
+        "symbol": "TRY-CASH",
+        "type": "Cash"
+    },
+    {
+        "name": "United Arab Emirates Dirham Cash",
+        "symbol": "AED-CASH",
+        "type": "Cash"
+    },
+    {
+        "name": "Saudi Riyal Cash",
+        "symbol": "SAR-CASH",
+        "type": "Cash"
+    },
+    {
+        "name": "South African Rand Cash",
+        "symbol": "ZAR-CASH",
+        "type": "Cash"
+    },
+    {
+        "name": "Polish Zloty Cash",
+        "symbol": "PLN-CASH",
+        "type": "Cash"
+    }
+]
